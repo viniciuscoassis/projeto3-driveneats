@@ -5,6 +5,7 @@
 /* font-family: 'Righteous', cursive; */
 
 
+
     body{background-color: #E5E5E5;
         font-family: 'Roboto', sans-serif;
     }
@@ -20,6 +21,7 @@
     top:0;
     left:0;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    z-index: 1;
     
     }
     .topo-texto{
@@ -47,24 +49,28 @@
     }
 
   
-    .cardapio-itens{
+    .cardapio-secao{
         width: 100%;
         
         overflow-x: scroll;
-     display: flex;
-    
-     padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+ 
+        margin: 20px;
+     
     }
 
-    .cardapio-secao{
-      
+    .cardapio-itens{
+        display: flex;
+        
         padding-bottom: 15px;
-        padding-left: 15px;
+        
     }
     .cardapio-secao h1{
         font-family: 'Righteous', cursive;
         font-size: 26px;
-        margin-bottom:10px;
+        margin-bottom:30px;
+        
     }   
     .cardapio-todo{
         margin-bottom:90px
@@ -78,7 +84,8 @@
         border-radius: 10px;
         padding: 15px;
         margin-right: 20px;
-        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+        position: relative;
        
         
     }
@@ -92,9 +99,15 @@
     .textos-secao{
         display: flex;
         flex-direction: column;
-        
-    
-        
+      
+    }
+
+    .secao-itens ion-icon{
+        color: #32B72F;
+        font-size: 19px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
     }
 
     .secao-itens h1{
@@ -137,12 +150,13 @@
        
     }
     .borda{
-        display: none;
-        
+        border: 7px solid #32B72F;
+    }
+   
+    .some{
+        display:none;
     }
     @media (max-width: 614px){
-        .topo {
-           
-        }
+     
     }
 
