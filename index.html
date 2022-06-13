@@ -296,6 +296,10 @@
 let bebidaVerificado = 0;
 let docesVerificado = 0;
 
+let pratoSelecionado = 0;
+let bebidaSelecionado = 0;
+let doceSelecionado = 0;
+
 let iconVerificado = 0;
 
 
@@ -314,6 +318,12 @@ function select(selecionado){
 // adicionar no selecionado
 selecionado.classList.add("borda");
 selecionado.querySelector(".verificado").classList.remove("some");
+pratoSelecionado = 1;
+
+// verificação se todos estão selecionados
+if (pratoSelecionado == 1 && bebidaSelecionado == 1 && doceSelecionado === 1){
+    console.log("foi em");
+} else console.log("n foi");
 
 }
 
@@ -331,6 +341,12 @@ if (bebidaVerificado){
 // adicionar no selecionado
 selecionado.classList.add("borda");
 selecionado.querySelector(".verificado").classList.remove("some");
+bebidaSelecionado = 1;
+
+// verificação se todos estão selecionados
+if (pratoSelecionado == 1 && bebidaSelecionado == 1 && doceSelecionado === 1){
+    console.log("foi em");
+} else console.log("n foi");
 
 }
 
@@ -348,6 +364,13 @@ if (doceVerificado){
 // adicionar no selecionado
 selecionado.classList.add("borda");
 selecionado.querySelector(".verificado").classList.remove("some");
+doceSelecionado = 1;
+
+
+// verificação se todos estão selecionados
+if (pratoSelecionado == 1 && bebidaSelecionado == 1 && doceSelecionado === 1){
+    console.log("foi em");
+} else console.log("n foi");
 
 }
 
