@@ -140,7 +140,7 @@
 
     }
     .finalizar button{
-        background-color: #CBCBCB;
+        
         color: white;
         border: none;
         height: 70%;
@@ -157,7 +157,11 @@
     .some{
         display:none;
     }
-    @media (max-width: 614px){
-     
+    .botao-bloqueado{
+        background-color: #CBCBCB;
     }
+    .fechar-pedido{
+        background-color: #32B72F;
+    }
+    
 
